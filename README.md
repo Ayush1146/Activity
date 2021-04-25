@@ -6,7 +6,7 @@
 
 |ON|OFF|
 |:--:|:--:|
-|![ON](https://github.com/Ayush1146/Activity/blob/684806a6d65a35b8f6ecb3d37d2df82df04ece3f/simulation/ACTIVITY%20ON.png)|![OFF](simulation/OFF.png)|
+|![ON](https://github.com/Ayush1146/Activity/blob/684806a6d65a35b8f6ecb3d37d2df82df04ece3f/simulation/ACTIVITY%20ON.png)|![OFF](simulation/ACTIVITY OFF.png)|
 
 #### CI and Code Quality
 
