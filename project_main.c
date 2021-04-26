@@ -22,7 +22,10 @@ void peripheral_init(void){
 }
 int main(void)
 {
-   
+   /**
+    * @brief Construct a new peripheral init object
+    * 
+    */
     peripheral_init();
 
     while(1){
@@ -30,6 +33,7 @@ int main(void)
        {
 
        LED_PORT|= (1<<LED_PIN);
+       
        _delay_ms(2000);
        }
 
