@@ -1,38 +1,44 @@
-/*
+/**
+ * @file project_main.c
+ * @author Ayush (sharmayush009@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-26
+ * 
+ * @copyright Copyright (c) 2021
+ * 
  */
+#include "project-config.h"
+#include "activity.h"
 
-#include <avr/io.h>
-#include <util/delay.h>
+void peripheral_init(void){
 
+ DDRB |= (1<<LED_PIN);
+
+    DDRD &=~(1<<SW_PIN_0);
+    DDRD &=~(1<<SW_PIN_1);
+    PORTD |= (1<<SW_PIN_0);
+    PORTD |= (1<<SW_PIN_1);
+}
 int main(void)
 {
-    DDRB |= (1<<PB0);
-
-    DDRD &=~(1<<PD0);
-    DDRD &=~(1<<PD1);
-    PORTD |= (1<<PD0);
-    PORTD |= (1<<PD1);
+   
+    peripheral_init();
 
     while(1){
-    if((!(PIND&(1<<PD0))) && (!(PIND&(1<<PD1))))
+    if((!(PIND&(1<<SW_PIN_0))) && (!(PIND&(1<<SW_PIN_1))))
        {
 
-       PORTB|= (1<<PB0);
+       LED_PORT|= (1<<LED_PIN);
        _delay_ms(2000);
        }
 
         else{
 
-        PORTB&=~(1<<PB0);
+        LED_PORT&=~(1<<LED_PIN);
         _delay_ms(2000);
 
-
-
         }
-
-
     }
-
-
     return 0;
 }
