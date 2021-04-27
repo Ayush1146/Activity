@@ -1,5 +1,5 @@
 /**
- * @file activity.h
+ * @file activity1.h
  * @author Ayush (sharmayush009@gmail.com)
  * @brief 
  * @version 0.1
@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef __ACTIVITY_H_
-#define __ACTIVITY_H_
+#ifndef __ACTIVITY1_H_
+#define __ACTIVITY1_H_
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -36,4 +36,4 @@
 
 
 
-#endif /** __ACTIVITY_H_ */
+#endif /** __ACTIVITY1_H_ */
