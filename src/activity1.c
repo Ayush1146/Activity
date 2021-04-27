@@ -8,8 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "project-config.h"
-#include "activity.h"
+#include "activity1.h"
 
 void peripheral_init(void){
 
@@ -29,18 +28,18 @@ int main(void)
     peripheral_init();
 
     while(1){
-    if((!(PIND&(1<<SW_PIN_0))) && (!(PIND&(1<<SW_PIN_1))))
+    if(SWITCH_ON)
        {
 
        LED_PORT|= (1<<LED_PIN);
        
-       _delay_ms(2000);
+       _delay_ms(LED_ON_TIME);
        }
 
         else{
 
         LED_PORT&=~(1<<LED_PIN);
-        _delay_ms(2000);
+        _delay_ms(LED_OFF_TIME);
 
         }
     }
