@@ -3,7 +3,7 @@ PROJ_NAME = LED
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c
+SRC = src/activity1.c
 
 # All header file paths
 INC = -I inc
