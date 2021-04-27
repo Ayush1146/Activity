@@ -21,8 +21,7 @@
 
 #define LED_ON_TIME     (2000)  /**< LED ON time in milli seconds  */
 #define LED_OFF_TIME    (2000)   /**< LED OFF time in milli seconds */
-
-
+#define SWITCH_ON (!(PIND&(1<<SW_PIN_0))) && (!(PIND&(1<<SW_PIN_1))) /**< Switch On*/
 /**
  * Macro Definitions
  */
