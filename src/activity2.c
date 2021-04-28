@@ -1,5 +1,4 @@
-#include <avr/io.h>
-#include <util/delay.h>
+#include "activity2.h"
 
 void Init_ADC()     //INTIALIZE
 {
