@@ -34,6 +34,6 @@
 #define SW_PIN_0 (PD0)  /**< SWITCH 0 Pin number */
 #define SW_PIN_1 (PD1)  /**< SWITCH 1 Pin number */
 
-
+void peripheral_init(void);
 
 #endif /** __ACTIVITY1_H_ */
