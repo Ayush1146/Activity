@@ -16,6 +16,7 @@
 /**
  * Macro Definitions
  */
+#define F_CPU 16000000UL 
 #define LED_ON 	(0x01)			/**< LED state HIGH */
 #define LED_OFF	(0x00)			/**< LED state LOW */
 
