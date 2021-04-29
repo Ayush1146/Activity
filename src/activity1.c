@@ -27,13 +27,14 @@ int initialize_led(){
        LED_PORT|= (1<<LED_PIN);
        
        _delay_ms(LED_ON_TIME);
+     return 1;
        }
 
         else{
 
         LED_PORT&=~(1<<LED_PIN);
         _delay_ms(LED_OFF_TIME);
-
+        return 0;
         }
   
 }
