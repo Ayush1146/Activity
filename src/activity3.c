@@ -28,7 +28,7 @@ void waveform(uint16_t temp)
 
     }
     else{
-        OCR1A = 0x3ff;  /*duty cycle is 100%*/
+        OCR1A = 0x3ff; 
 
     }
 
