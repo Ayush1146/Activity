@@ -23,18 +23,3 @@ ADCSRA|=(1<<ADIF);// Clear ADF
 return(ADC);
 
 }
-
-int main(void)
-{
-
- void Init_ADC();
- uint16_t temp;
-    while(1)
-    {
-       temp = readADC(0);
-       _delay_ms(200);
-
-    }
-
-    return 0;
-}
