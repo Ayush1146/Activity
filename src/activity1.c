@@ -19,15 +19,8 @@ void peripheral_init(void){
     PORTD |= (1<<SW_PIN_0);
     PORTD |= (1<<SW_PIN_1);
 }
-int main(void)
-{
-   /**
-    * @brief Construct a new peripheral init object
-    * 
-    */
-    peripheral_init();
 
-    while(1){
+int initialize_led(){
     if(SWITCH_ON)
        {
 
@@ -42,6 +35,5 @@ int main(void)
         _delay_ms(LED_OFF_TIME);
 
         }
-    }
-    return 0;
+  
 }
