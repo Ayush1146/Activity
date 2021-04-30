@@ -32,9 +32,16 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
-
+/**
+ * @brief Code executes here
+ * 
+ * @return int Return 1 if both switches are ON else returns 0
+ */
 int initialize_led();
-
+/**
+ * @brief Initialize peripherals
+ * 
+ */
 void peripheral_init(void);
 
 #endif /** __ACTIVITY1_H_ */
