@@ -8,7 +8,7 @@
 
 void USARTint(uint16_t );
 
-void UARTwritechar(char );
+void UARTwritechar(uint16_t );
 
 char UARTreadchar();
 
