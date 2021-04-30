@@ -1,4 +1,4 @@
-DOXY_FILE = LED
+DOXY_FILE = Seat_heater
 doc:
 	doxygen ./$(DOXY_FILE)
 
