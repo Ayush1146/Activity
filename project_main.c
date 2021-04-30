@@ -12,15 +12,15 @@ int main(void)
 		int status = 0;
 		status = initialize_led();	/*Checking the status of buttons*/
 		if(status == 1){
-			InitADC();	/*Initailising ADC*/
-			setup_pwm();	/*Setting up PWM*/
-			USARTInit(103);	/*Initialising USART*/
+			Init_ADC();	/*Initailising ADC*/
+			setuppwm();	/*Setting up PWM*/
+			USARTint(103);	/*Initialising USART*/
     		uint16_t temp = 0;
-			temp = ReadADC(0); /*Reading the temperature value*/
+			temp = readADC(0); /*Reading the temperature value*/
 			_delay_ms(200);
-			pwm_waveform(temp);	/*Generation of PWM according to the temperature value*/
+			waveform(temp);	/*Generation of PWM according to the temperature value*/
 			_delay_ms(200);
-			USARTWriteChar(temp);	
+			UARTwritechar(temp);	
       
       }
     }
