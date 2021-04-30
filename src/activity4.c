@@ -10,7 +10,16 @@ void USARTint(uint16_t ubrr_value){
 
 }
 
-void UARTwritechar(char data){
+char UARTreadchar(){
+while(!((UCSR0A)&(1<<RXC0)))
+{
+
+}
+return UDR0;
+}
+
+
+void UARTwritechar(uint16_t temp){
 
 while(!((UCSR0A)& (1<<UDRE0)))
 {
@@ -20,12 +29,6 @@ while(!((UCSR0A)& (1<<UDRE0)))
 UDR0 = data;
 }
 
-char UARTreadchar(){
-while(!((UCSR0A)&(1<<RXC0)))
-{
 
-}
-return UDR0;
-}
 
 
