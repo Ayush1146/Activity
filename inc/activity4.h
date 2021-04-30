@@ -2,10 +2,13 @@
 #define ACTIVITY4_H_INCLUDED
 
 #define F_CPU 16000000UL
+#include<avr/io.h>
+#include <util/delay.h>
+#include <stdint.h>
 
-void USARTint(uint16_t ubrr_value );
+void USARTint(uint16_t );
 
-void UARTwritechar(char data);
+void UARTwritechar(char );
 
 char UARTreadchar();
 
