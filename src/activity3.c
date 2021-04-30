@@ -68,7 +68,7 @@ void waveform(uint16_t temp)
         temprature[2] = 176;
         temprature[3] = 'C';
         temprature[4] = ' ';
-        temp[5] = '\0';
+        temprature[5] = '\0';
 
         for(i=0;i<=5;i++){
 
