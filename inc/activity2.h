@@ -6,7 +6,7 @@
 
 void Init_ADC();
 
-uint16_t readADC(uint8_t ch);
+uint16_t readADC(uint8_t);
 
 
 #endif /** __ACTIVITY2_H_ */
