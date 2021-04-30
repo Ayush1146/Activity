@@ -19,7 +19,7 @@ return UDR0;
 }
 
 
-void UARTwritechar(uint16_t temp){
+void UARTwritechar(char data){
 
 while(!((UCSR0A)& (1<<UDRE0)))
 {
