@@ -2,6 +2,8 @@
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
 # Seat Heater
+![](https://github.com/Ayush1146/Activity/blob/d0f492a905c13d0930b814081df932c560cbf9ec/simulation/Seatheater2.0.bmp)
+
 #### CI and Code Quality
 
 Build|Cppcheck|Git-Inspector|Codacy
