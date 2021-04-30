@@ -2,7 +2,7 @@
 
 void USARTint(uint16_t ubrr_value){
 
- UBRR0L = ubrr_value;
+ UBRR0L = ubrr_value;               // Baud Rate
  UBRR0H = (ubrr_value>>8)&0x00ff;
  UCSR0A |= (1<<RXC0) | (1<<TXC0);//Receive and Transmit Complete
  UCSR0B |= (1<<RXCIE0)| (1<<TXCIE0)| (1<< RXEN0) |(1<< TXEN0);// Enable Tx ,Rx and Interrupt
@@ -10,6 +10,7 @@ void USARTint(uint16_t ubrr_value){
 
 }
 
+//function to read data from  UDR register 
 char UARTreadchar(){
 while(!((UCSR0A)&(1<<RXC0)))
 {
@@ -18,7 +19,7 @@ while(!((UCSR0A)&(1<<RXC0)))
 return UDR0;
 }
 
-
+// function to write data to UDR register 
 void UARTwritechar(char data){
 
 while(!((UCSR0A)& (1<<UDRE0)))

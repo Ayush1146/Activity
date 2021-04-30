@@ -20,6 +20,6 @@ while(!(ADCSRA & (1<<ADIF)));  // bit is set when an ADC conversion completes IN
 
 ADCSRA|=(1<<ADIF);// Clear ADF
 
-return(ADC);
+return(ADC); // result
 
 }

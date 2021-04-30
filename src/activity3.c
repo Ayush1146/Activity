@@ -3,7 +3,7 @@
 #include <string.h>
 
 void setuppwm(){
-    TCCR1A |= (1<<COM1A1)|(1<<WGM11)|(1<<WGM10);
+    TCCR1A |= (1<<COM1A1)|(1<<WGM11)|(1<<WGM10); // Non inverting Mode and 10-bit Fast PWM mode
     TCCR1B |= (1<<WGM12)|(1<<CS11)|(1<<CS10); // 64 PRESCALAR
 
     DDRB |= (1<<PB1);
