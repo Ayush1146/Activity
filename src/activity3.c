@@ -1,4 +1,3 @@
-
 #include "activity3.h"
 #include "activity4.h"
 #include <string.h>
@@ -14,17 +13,16 @@ void setuppwm(){
 void waveform(uint16_t temp)
 {
     int i;
-    char temprature[10];
+    char temprature[5];
     if(temp>=0 && temp<=200){
         OCR1A=0xcc;  //Output PWM 20%
         temprature[0] = '2';
         temprature[1] = '0';
         temprature[2] = 176;
         temprature[3] = 'C';
-        temprature[4] = ' ';
-        temprature[5] = '\0';
+        temprature[4] = '\0';
 
-        for(i=0;i<=5;i++){
+        for(i=0;i<=4;i++){
 
             UARTwritechar(temprature[i]);
 
@@ -37,10 +35,9 @@ void waveform(uint16_t temp)
         temprature[1] = '5';
         temprature[2] = 176;
         temprature[3] = 'C';
-        temprature[4] = ' ';
-        temprature[5] = '\0';
+        temprature[4] = '\0';
 
-        for(i=0;i<=5;i++){
+        for(i=0;i<=4;i++){
 
           UARTwritechar(temprature[i]);
         }
@@ -52,10 +49,9 @@ void waveform(uint16_t temp)
         temprature[1] = '9';
         temprature[2] = 176;
         temprature[3] = 'C';
-        temprature[4] = ' ';
-        temprature[5] = '\0';
+        temprature[4] = '\0';
 
-        for(i=0;i<=5;i++){
+        for(i=0;i<=4;i++){
 
           UARTwritechar(temprature[i]);
         }
@@ -67,10 +63,9 @@ void waveform(uint16_t temp)
         temprature[1] = '3';
         temprature[2] = 176;
         temprature[3] = 'C';
-        temprature[4] = ' ';
-        temprature[5] = '\0';
+        temprature[4] = '\0';
 
-        for(i=0;i<=5;i++){
+        for(i=0;i<=4;i++){
 
             UARTwritechar(temprature[i]);
     }
@@ -81,11 +76,9 @@ void waveform(uint16_t temp)
         temprature[0] = '0';
         temprature[1] = 'F';
         temprature[2] = 'F';
-        temprature[3] = ' ';
-        temprature[4] = ' ';
-        temprature[5] = '\0';
+        temprature[4] = '\0';
 
-        for(i=0;i<=5;i++){
+        for(i=0;i<=4;i++){
 
             UARTwritechar(temprature[i]);
         }
