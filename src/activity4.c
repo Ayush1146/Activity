@@ -26,7 +26,7 @@ while(!((UCSR0A)& (1<<UDRE0)))
 
 }
 
-UDR0 = temp;
+UDR0 = data;
 }
 
 
