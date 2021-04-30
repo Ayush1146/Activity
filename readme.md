@@ -2,7 +2,7 @@
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
 # Seat Heater
-![](https://github.com/Ayush1146/Activity/blob/d0f492a905c13d0930b814081df932c560cbf9ec/simulation/Seatheater2.0.bmp)
+![](https://github.com/Ayush1146/Activity/blob/e9ab794d8cb5c86f59cd3e277b536a53f119bd78/simulation/Seatheater2.0.png)
 
 #### CI and Code Quality
 
