@@ -1,6 +1,7 @@
 
 #include "activity3.h"
 #include "activity4.h"
+#include <string.h>
 
 void setuppwm(){
     TCCR1A |= (1<<COM1A1)|(1<<WGM11)|(1<<WGM10);
@@ -33,30 +34,4 @@ void waveform(uint16_t temp)
 
     }
 
-}
-void UARTwritechar(uint16_t temp)
-{
-     if(temp>=0 && temp<=200){
-        unsigned char temperature[] = "Temperature is 20 degree Celsius";
-
-    }
-    else if(temp>=210 && temp<=500){
-        unsigned char temperature[] = "Temperature is 25 degree Celsius";
-
-    }
-    else if(temp>=510 && temp<=700){
-        unsigned char temperature[] = "Temperature is 29 degree Celsius";
-
-    }
-    else if(temp>=710 && temp<=1024){
-        unsigned char temperature[] = "Temperature is 33 degree Celsius";
-
-    }
-    else{
-        unsigned char temperature[] = "Temperature is Out of limit";
-
-    }
-    
-    
-    
 }
