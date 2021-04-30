@@ -2,7 +2,6 @@
 #define __ACTIVITY2_H_
 
 #include <avr/io.h>
-#include <util/delay.h>
 
 
 void Init_ADC();
