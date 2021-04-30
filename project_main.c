@@ -20,6 +20,7 @@ int main(void)
 			_delay_ms(200);
 			pwm_waveform(temp);	/*Generation of PWM according to the temperature value*/
 			_delay_ms(200);
+			USARTWriteChar(temp);	
       
       }
     }
