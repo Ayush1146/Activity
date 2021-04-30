@@ -8,7 +8,7 @@
 
 void setuppwm();
 
-void waveform(uint16_t temp);
+void waveform(uint16_t);
 
 
 
